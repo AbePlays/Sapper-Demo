@@ -1,5 +1,4 @@
 <script>
-  export let segment;
 </script>
 
 <nav>
@@ -9,24 +8,16 @@
     </div>
     <ul>
       <li>
-        <a aria-current={segment === "about" ? "page" : undefined} href="about"
-          >Characters</a
-        >
+        <a href="characters">Characters</a>
       </li>
       <li>
-        <a aria-current={segment === "about" ? "page" : undefined} href="about"
-          >Houses</a
-        >
+        <a href="about">Houses</a>
       </li>
       <li>
-        <a aria-current={segment === "about" ? "page" : undefined} href="about"
-          >Books</a
-        >
+        <a href="about">Books</a>
       </li>
       <li>
-        <a aria-current={segment === "about" ? "page" : undefined} href="about"
-          >About</a
-        >
+        <a href="about">About</a>
       </li>
     </ul>
   </div>
