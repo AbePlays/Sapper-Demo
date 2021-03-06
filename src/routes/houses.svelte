@@ -9,7 +9,7 @@
   const getData = async () => {
     loading = true;
     const res = await fetch(
-      `https://www.anapioficeandfire.com/api/characters?page=${currentPage}&pageSize=10`
+      `https://www.anapioficeandfire.com/api/houses?page=${currentPage}&pageSize=10`
     );
     const fetchedData = await res.json();
     loading = false;
@@ -21,23 +21,17 @@
   });
 </script>
 
-<div class="characters-wrapper">
-  <div class="characters-content">
-    <h1>Characters</h1>
+<div class="houses-wrapper">
+  <div class="houses-content">
+    <h1>Houses</h1>
     {#if loading}
       <p>Loading</p>
     {:else}
-      {#each data as character}
+      {#each data as house}
         <Card>
-          <p>Name: <span>{character.name || "-"}</span></p>
-          <p>Gender: <span>{character.gender || "-"}</span></p>
-          <p>Culture: <span>{character.culture || "-"}</span></p>
-          <p>
-            Aliases: {#each character.aliases as alias}
-              <span>{alias}</span>
-            {/each}
-          </p>
-          <p>Played By: <span>{character.playedBy}</span></p>
+          <p>Name: <span>{house.name || "-"}</span></p>
+          <p>Region: <span>{house.region || "-"}</span></p>
+          <p>Coat of Arms: <span>{house.coatOfArms || "-"}</span></p>
         </Card>
       {/each}
     {/if}
@@ -45,19 +39,19 @@
 </div>
 
 <style>
-  .characters-wrapper {
+  .houses-wrapper {
     background-color: black;
     color: white;
     min-height: 90vh;
   }
 
-  .characters-content {
+  .houses-content {
     max-width: 64rem;
     margin: 0 auto;
     padding: 1rem;
   }
 
-  .characters-content h1 {
+  .houses-content h1 {
     margin: 1rem 0;
     font-size: 2rem;
     text-transform: uppercase;
