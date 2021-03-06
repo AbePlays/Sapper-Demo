@@ -2,7 +2,7 @@
 </script>
 
 <svelte:head>
-  <title>GOT</title>
+  <title>Home</title>
 </svelte:head>
 
 <div class="home-wrapper">

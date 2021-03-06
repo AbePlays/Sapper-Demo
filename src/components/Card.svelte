@@ -7,6 +7,9 @@
 
 <style>
   .card {
-    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    padding: 1.2rem 1.8rem;
+    background-color: #222;
   }
 </style>

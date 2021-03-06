@@ -49,7 +49,7 @@
 
   .about-group h1 {
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 1.5rem;
     letter-spacing: 0.1rem;
   }
@@ -69,6 +69,7 @@
   p {
     max-width: 40rem;
     margin: 0 auto;
+    line-height: 1.5;
   }
 
   a {
