@@ -26,7 +26,7 @@
 <style>
   .home-wrapper {
     background-color: black;
-    height: 90vh;
+    min-height: 90vh;
     color: white;
   }
 
@@ -35,23 +35,19 @@
     margin: 0 auto;
     padding: 1rem;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    position: relative;
   }
 
   .home-content h1 {
+    margin-top: 4rem;
     text-transform: uppercase;
     letter-spacing: 0.3rem;
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 400;
   }
 
   .home-content p {
     max-width: 50rem;
-    margin: 5rem 0;
+    margin: 3rem 0;
     line-height: 1.5;
   }
 
@@ -73,5 +69,19 @@
 
   .bottom-text p {
     margin-top: 0.5rem;
+  }
+
+  @media (min-width: 640px) {
+    .home-content h1 {
+      font-size: 5rem;
+    }
+
+    .home-content p {
+      margin: 5rem 0;
+    }
+
+    .bottom-text p {
+      margin-top: 0.5rem;
+    }
   }
 </style>

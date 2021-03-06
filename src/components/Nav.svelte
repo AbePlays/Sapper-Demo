@@ -42,9 +42,12 @@
     max-width: 80rem;
     height: 100%;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 0 1rem;
+  }
+
+  .logo {
+    text-align: center;
+    padding-top: 0.75rem;
   }
 
   .logo h1 a {
@@ -62,6 +65,8 @@
   ul {
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
+    margin-top: 0.75rem;
   }
 
   li {
@@ -75,5 +80,24 @@
   li a {
     text-decoration: none;
     color: white;
+    transition: color 200ms ease-in-out;
+  }
+
+  a:hover {
+    color: #aaa;
+  }
+
+  @media (min-width: 640px) {
+    .wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      padding-top: 0;
+    }
+    ul {
+      margin-top: 0;
+    }
   }
 </style>

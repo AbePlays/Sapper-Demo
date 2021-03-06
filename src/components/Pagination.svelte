@@ -2,12 +2,21 @@
   export let forwardFunction;
   export let backwardFunction;
   export let currentIndex = 0;
+  export let lastPage;
 </script>
 
 <div class="pagination-wrapper">
-  <button class="btn" on:click={backwardFunction}>{"<"}</button>
+  <button
+    class="btn"
+    on:click={backwardFunction}
+    class:inactive={currentIndex === 1}>{"<"}</button
+  >
   <span>{currentIndex}</span>
-  <button class="btn" on:click={forwardFunction}>{">"}</button>
+  <button
+    class="btn"
+    on:click={forwardFunction}
+    class:inactive={currentIndex === lastPage}>{">"}</button
+  >
 </div>
 
 <style>
@@ -39,5 +48,10 @@
 
   span {
     font-size: 1.2rem;
+  }
+
+  .inactive {
+    background-color: #111;
+    cursor: not-allowed;
   }
 </style>

@@ -68,6 +68,7 @@
         currentIndex={currentPage}
         {backwardFunction}
         {forwardFunction}
+        {lastPage}
       />
     {/if}
   </div>
