@@ -11,18 +11,26 @@
     </div>
     <ul>
       <li>
-        <a class:current={segment === "characters"} href="characters"
-          >Characters</a
+        <a
+          rel="prefetch"
+          class:current={segment === "characters"}
+          href="characters/1">Characters</a
         >
       </li>
       <li>
-        <a class:current={segment === "houses"} href="houses">Houses</a>
+        <a rel="prefetch" class:current={segment === "houses"} href="houses/1"
+          >Houses</a
+        >
       </li>
       <li>
-        <a class:current={segment === "books"} href="books">Books</a>
+        <a rel="prefetch" class:current={segment === "books"} href="books/1"
+          >Books</a
+        >
       </li>
       <li>
-        <a class:current={segment === "about"} href="about">About</a>
+        <a rel="prefetch" class:current={segment === "about"} href="about"
+          >About</a
+        >
       </li>
     </ul>
   </div>
